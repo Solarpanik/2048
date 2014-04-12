@@ -16,7 +16,7 @@ body {
   clear: both; }
 
 h1.title {
-  font-size: 80px;
+  font-size: 70px;
   font-weight: bold;
   margin: 0;
   display: block;
@@ -48,7 +48,8 @@ h1.title {
     opacity: 0; } }
 .scores-container {
   float: right;
-  text-align: right; }
+  text-align: right;
+  margin-bottom: 10px;}
 
 .score-container, .best-container {
   position: relative;
@@ -191,13 +192,16 @@ hr {
       height: 40px;
       line-height: 42px;
       margin-left: 9px; }
-      .game-container .game-message a.keep-playing-button {
+    .game-container .game-message a.keep-playing-button {
         display: none; }
     .game-container .game-message.game-won {
       background: rgba(237, 194, 46, 0.5);
       color: #f9f6f2; }
-      .game-container .game-message.game-won a.keep-playing-button {
+      .game-container .game-message.game-won {
         display: inline-block; }
+      /* Hides the keep playing button since it has no sense to keep playing */
+      a.keep-playing-button {
+        display: none; }
     .game-container .game-message.game-won, .game-container .game-message.game-over {
       display: block; }
 
@@ -593,13 +597,16 @@ hr {
         height: 40px;
         line-height: 42px;
         margin-left: 9px; }
-        .game-container .game-message a.keep-playing-button {
+      .game-container .game-message a.keep-playing-button {
           display: none; }
       .game-container .game-message.game-won {
         background: rgba(237, 194, 46, 0.5);
         color: #f9f6f2; }
-        .game-container .game-message.game-won a.keep-playing-button {
+      .game-container .game-message.game-won {
           display: inline-block; }
+      /* Hides the keep playing button since it has no sense to keep playing */
+      a.keep-playing-button {
+          display: none; }
       .game-container .game-message.game-won, .game-container .game-message.game-over {
         display: block; }
 
